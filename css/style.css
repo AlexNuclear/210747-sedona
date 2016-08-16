@@ -1,0 +1,18 @@
+body {font-size: 14px;
+line-height: 26px;
+font-color: black;
+font-family: 'PT Sans', sans-serif;
+font-weight: normal;
+}
+h1 { font-size: 21px;
+	line-height: 26px;
+	font-color: black;
+	font-weight: bold;
+	font-family: 'PT Sans', sans-serif;
+	 }
+h2 { font-size: 21px;
+	line-height: 21px;
+	font-color: black;
+	font-weight: bold;
+	font-family: 'PT Sans', sans-serif;
+}
