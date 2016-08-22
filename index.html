@@ -12,36 +12,38 @@
         <div class="logo">
           <a href="#"><img src="img/main-logo-sedona.png" alt="logo"></a>
         </div>
-        <ul class="menu-list">
-          <li class="menu-item"><a href="#">ИНФОРМАЦИЯ</a></li>
-          <li class="menu-item"><a href="#">ФОТО И ВИДЕО</a></li>
-          <li class="menu-item"><a href="#">КАРТА ШТАТА</a></li>
-          <li class="menu-item"><a href="#">ГОСТИНИЦЫ</a></li>
-        </ul>
+        <nav class=main-navigation>
+          <ul class="menu-list">
+            <li class="menu-item"><a href="#">ИНФОРМАЦИЯ</a></li>
+            <li class="menu-item"><a href="#">ФОТО И ВИДЕО</a></li>
+            <li class="menu-item"><a href="#">КАРТА ШТАТА</a></li>
+            <li class="menu-item"><a href="#">ГОСТИНИЦЫ</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main class="container">
       <div class="image-main">
-  	    <img src="img/main-banner-sedona.jpg"  alt="sedona">
+  	    <img src="img/main-banner-sedona.jpg"  alt="sedona" height="508px" width="100%">
       </div>
 
   	  <div class="title">
-  	    <h1 class="title-main">СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br>ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО</h1>
+  	    <h1 class="title-main">СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО</h1>
   	    <p class="title-paragraph">РАССМОТРИМ 5 ПРИЧИН,ПО КОТОРЫМ СЕДОНА КРУЧЕ,ЧЕМ ГРАНД КАНЬОН! </p>
   	  </div>
 
-      <div class="banner">
+      <div class="banner clearfix">
         <div class="banner-text">
           <h2 class="banner-heading">НАСТОЯЩИЙ ГРОДОК</h2>
           <span>-№1-</span>
-          <p class="banner-paragraph">СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ,ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+          <p class="banner-paragraph">СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
         </div>
         <Div class="banner-image">
           <img src="img/Banner-second-sedona.jpg"  alt="banner">
         </Div>
       </div>
 
-  	  <div class="features">
+  	  <div class="features clearfix">
         <div class="features-housing">
   	      <div class="features-housing-img">
   	      <img src="img/house-icon.png" " alt="House-icon">
@@ -67,40 +69,41 @@
   	    </div>
       </div>
 
-      <div class="banner">
+      <div class="banner clearfix">
         <Div class="banner-image">
           <img src="img/banner-third-sedona.jpg" width="800" height="257" alt="banner">
         </Div>  
         <div class="banner-text">
-          <h3 class="banner-heading">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
+          <h3 class="banner-heading">ТАМ ЕСТЬ<br>МОСТ ДЬЯВОЛА</h3>
           <span>-№2-</span>
           <p class="banner-paragraph">ДА,ПО НЕМУ МОЖНО ПРОЙТИ!ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ</p>
         </div>
       </div>
 
-      <div class=features>
-        <div class="features-space">
-  	      <h3 class="features-space-heading">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+      <div class="features-gray clearfix">
+        <div class="features">
+  	      <h3 class="features-heading">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
   	      <span>-№3-</span>
-  	      <p class="features-housing-paragraph">ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+  	      <p class="features-paragraph">ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
   	    </div>
 
-  	    <div class="features-road">
-  	      <h3 class="features-road-heading">КРАСИВАЯ ДОРОГА</h3>
+  	    <div class="features">
+  	      <h3 class="features-heading">КРАСИВАЯ ДОРОГА</h3>
   	      <span>-№4-</span>
-  	      <p class="features-road-paragraph">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
+  	      <p class="features-paragraph">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
   	    </div>
 
-  	    <div class="features-tourists">
-  	      <h3 class="features-tourists-heading">МАЛО ТУРИСТОВ</h3>
+  	    <div class="features">
+  	      <h3 class="features-heading">МАЛО ТУРИСТОВ</h3>
   	      <span>-№5-</span>
-  	      <p class="features-tourists-paragraph">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
+  	      <p class="features-paragraph">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
   	    </div>
       </div>
 
       <div class="searcher">
         <h4 class="searcher-heading">ЗАИНТЕРЕСОВАЛИСЬ?"</h4>
         <p class="searcher-paragraph">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+        <a class="search-button" href="#" type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
         <div class="searcher-button">
           <form action="#" method="post">
             <label>ДАТА ЗАЕЗДА:<input type="date"></label>
@@ -110,11 +113,16 @@
               <label>ВЗРОСЛЫЕ:<input type="number"></label>
               <a href="#">-</a>
             </div>
+
             <div class="searcher-children-button">
               <a href="#">+</a>
               <label>ДЕТИ:<input type="number"></label>
               <a href="#">-</a>
             </div>
+            <div class="searcher-find">
+              <a href="#" class="searcher-find-text" type="button">НАЙТИ</a>
+            </div>
+
           </form>
         </div>
       </div>
@@ -130,11 +138,10 @@
   		    <a href="#"> #VISITSEDONA </a>
   	    </section>
   	    <section class="footer-social">
-          <a class="social-btn social-btn-vk" href="#">Vkontakte</a>
+          <a class="social-btn social-btn-vk" href="#"><span class=“sprite sprite-calendar”></span></a>
           <a class="social-btn social-btn-fb" href="#">Facebook</a>
           <a class="social-btn social-btn-Youtube" href="#">YouTube</a>
         </section>
-
         <section class="footer-copyright">
           <p>WEBSITE BY</p>
           <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>

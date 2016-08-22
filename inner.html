@@ -10,7 +10,7 @@
     <header class="main-header">
       <div class="menu">
         <div class="logo">
-          <a href="#"><img src="img/Sedona-hotels/main-logo-sedona.png" alt="logo"></a>
+          <a href="#"><img src="img/hotels/main-logo-sedona.png" alt="logo"></a>
         </div>
         <ul class="menu-list">
           <li class="menu-item"><a href="#">ИНФОРМАЦИЯ</a></li>
@@ -20,34 +20,38 @@
         </ul>
       </div>
     </header>
-    <main class="hotel-selection">
-      <form>
-        <div class="hotel-selection-infrastructure">
-          <label>БАССЕЙН<input type="checkbox"></label>
-          <label>ПАРКОВКА<input type="checkbox"></label>
-          <label>WI-FI<input type="checkbox"></label>
-        </div>
+    <main class="container">
+      <div class="hotel-selection">
+        <form>
+          <div class="hotel-selection-infrastructure">
+            <span>ИНФРАСТРУКТУРА:</span>
+            <label>БАССЕЙН<input type="checkbox"></label>
+            <label>ПАРКОВКА<input type="checkbox"></label>
+            <label>WI-FI<input type="checkbox"></label>
+          </div>
 
-        <div class="hotel-selection-housing">
-          <label>ГОСТИНИЦА<input type="checkbox" checked></label>
-          <label>МОТЕЛЬ<input type="checkbox" checked></label>
-          <label>АПАРТАМЕНТЫ<input type="checkbox" checked></label>
-        </div>
+          <div class="hotel-selection-housing">
+            <span>ТИП ЖИЛЬЯ:</span>
+            <label>ГОСТИНИЦА<input type="checkbox" checked></label>
+            <label>МОТЕЛЬ<input type="checkbox" checked></label>
+            <label>АПАРТАМЕНТЫ<input type="checkbox" checked></label>
+          </div>
 
-        <div class="hotel-selection-cost">
-          <span>от 0</span>
-          <span>ДО 3000</span>
-          <!--Пока через range сделаю,потом попытаюсь через JS-->
-          <input type="range" name="Range-button">
-        </div>
-        <div class="hotel-selection-show-button">
-          <input type="submit" name="show-button" value="ПОКАЗАТЬ">
-        </div>
-      </form>
+          <div class="hotel-selection-cost">
+            <span>от 0</span>
+            <span>ДО 3000</span>
+            <!--Пока через range сделаю,потом попытаюсь через JS-->
+            <input type="range" name="Range-button">
+          </div>
+          <div class="hotel-selection-show-button">
+            <input type="submit" name="show-button" value="ПОКАЗАТЬ">
+          </div>
+        </form>
+      </div>
       <div class="search-result">
-        <div class="Search-result-sorting">
-          <span>НАЙДЕНО:3</span>
-          <span>СОРТИРОВКА</span>
+        <div class="Search-result-sorting clearfix">
+          <b>НАЙДЕНО:3</b>
+          <span>СОРТИРОВКА:</span>
           <ul>
             <li><a href="#">ПО ЦЕНЕ</a></li>
             <li><a href="#">ПО ТИПУ</a></li>
@@ -60,7 +64,7 @@
       </div>
       <article class="hotels">
         <div class="hotels-item">
-          <img src="img/sedona-hotels/hotel1.jpg" width="135" height="90" alt="hotel">
+          <img src="img/hotels/hotel1.jpg" width="135" height="90" alt="hotel">
           <div class="hotels-item-description">
             <h2>AMARA RESORT & SPA</h2>
             <span>ГОСТИНИЦА</span>
@@ -73,7 +77,7 @@
 
       <article class="hotels">
         <div class="hotels-item">
-          <img src="img/sedona-hotels/hotel2.jpg" width="135" height="90" alt="hotel">
+          <img src="img/hotels/hotel2.jpg" width="135" height="90" alt="hotel">
           <div class="hotels-item-description">
             <h2>DESERT QUAIL INN</h2>
             <span>МОТЕЛЬ</span>
@@ -85,7 +89,7 @@
       </article> 
       <article class="hotels">
         <div class="hotels-item">
-          <img src="img/sedona-hotels/hotel3.jpg" width="135" height="90" alt="hotel">
+          <img src="img/hotels/hotel3.jpg" width="135" height="90" alt="hotel">
           <div class="hotels-item-description">
             <h2>VILLAS AT POCO DIABLO</h2>
             <span>АПАРТАМЕНТЫ</span>
