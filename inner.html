@@ -37,20 +37,27 @@
             <label>АПАРТАМЕНТЫ<input type="checkbox" checked></label>
           </div>
 
-          <div class="hotel-selection-cost">
-            <span>от 0</span>
-            <span>ДО 3000</span>
-            <!--Пока через range сделаю,потом попытаюсь через JS-->
-            <input type="range" name="Range-button">
-          </div>
-          <div class="hotel-selection-show-button">
-            <input type="submit" name="show-button" value="ПОКАЗАТЬ">
-          </div>
+          <div class="filter-range">
+            <div class="filter-tange-title">СТОИМОСТЬ В СУТКИ (Р):</div>
+            <div class="price-controls">
+              <label class="min-price">ОТ <input type="text" name="max-price" value="0"></label>
+              <label class="max-price">ДО <input type="text" name="max-price" value="3000"></label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="rangel-toggle range-toggle-min">
+              </div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <button class="btn-transparent" type="submit">ПОКАЗАТЬ</button>
+          </div>    
         </form>
       </div>
       <div class="search-result">
         <div class="Search-result-sorting clearfix">
-          <b>НАЙДЕНО:3</b>
+          <b>НАЙДЕНО: 3</b>
           <span>СОРТИРОВКА:</span>
           <ul>
             <li><a href="#">ПО ЦЕНЕ</a></li>
@@ -62,55 +69,69 @@
           </div>
         </div>   
       </div>
+      
       <article class="hotels">
-        <div class="hotels-item">
+        <div class="hotels-wrapper clearfix">
           <img src="img/hotels/hotel1.jpg" width="135" height="90" alt="hotel">
+        </div>
+        <div class="hotels-item-heading">
+          <h2 class="heading">AMARA RESORT & SPA</h2>
           <div class="hotels-item-description">
-            <h2>AMARA RESORT & SPA</h2>
             <span>ГОСТИНИЦА</span>
             <span>ОТ 3500 Р.</span>
-            <a href="#">ПОДРОБНЕЕ</a>
-            <a href="#">ЗАБРОНИРОВАТЬ</a>
+            <div class="hotels-item-buttons">
+              <a href="#">ПОДРОБНЕЕ</a>
+              <a href="#">ЗАБРОНИРОВАТЬ</a>
+            </div>
           </div>
         </div>
       </article>
 
       <article class="hotels">
-        <div class="hotels-item">
+        <div class="hotels-wrapper clearfix">
           <img src="img/hotels/hotel2.jpg" width="135" height="90" alt="hotel">
+        </div>
+        <div class="hotels-item-heading">
+          <h2 class="heading">DESERT QUAIL INN</h2>
           <div class="hotels-item-description">
-            <h2>DESERT QUAIL INN</h2>
             <span>МОТЕЛЬ</span>
             <span>ОТ 2000 Р.</span>
-            <a href="#">ПОДРОБНЕЕ</a>
-            <a href="#">ЗАБРОНИРОВАТЬ</a>
+            <div class="hotels-item-buttons">
+              <a href="#">ПОДРОБНЕЕ</a>
+              <a href="#">ЗАБРОНИРОВАТЬ</a>
+            </div>
           </div>
         </div>
       </article> 
+
       <article class="hotels">
-        <div class="hotels-item">
+        <div class="hotels-wrapper clearfix">
           <img src="img/hotels/hotel3.jpg" width="135" height="90" alt="hotel">
+        </div>
+        <div class="hotels-item-heading">
+          <h2 class="heading">VILLAS AT POCO DIABLO</h2>
           <div class="hotels-item-description">
-            <h2>VILLAS AT POCO DIABLO</h2>
             <span>АПАРТАМЕНТЫ</span>
             <span>ОТ 4000 Р.</span>
-            <a href="#">ПОДРОБНЕЕ</a>
-            <a href="#">ЗАБРОНИРОВАТЬ</a>
+            <div class="hotels-item-buttons">
+              <a href="#">ПОДРОБНЕЕ</a>
+              <a href="#">ЗАБРОНИРОВАТЬ</a>
+            </div>
           </div>
         </div>
       </article> 
+
     </main>
-        <footer class="main-footer">
+    <footer class="main-footer">
       <div class="container">
         <section class=link>
           <a href="#"> #VISITSEDONA </a>
         </section>
         <section class="footer-social">
-          <a class="social-btn social-btn-vk" href="#">Vkontakte</a>
-          <a class="social-btn social-btn-fb" href="#">Facebook</a>
-          <a class="social-btn social-btn-Youtube" href="#">YouTube</a>
+          <a class="social-btn social-btn-t" href="#"><span></span></a>
+          <a class="social-btn social-btn-fb" href="#"><span></span></a>
+          <a class="social-btn social-btn-utb" href="#"><span></span></a>
         </section>
-
         <section class="footer-copyright">
           <p>WEBSITE BY</p>
           <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
