@@ -5,7 +5,49 @@ body {font-size: 14px;
       font-weight: normal;
       margin:0;
       min-width: 768px;
+      background-color: #f2f2f2;
 }
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: "symbols-sedona";
+  src: url("../fonts/symbols-sedona.woff") format("woff"),
+       url("../fonts/symbols-sedona.woff2") format("woff2");
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-sedona";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+
+  speak: none;
+}
+
+.icon-facebook::before { content: "\66"; } /* "f" */
+.icon-twitter::before { content: "\74"; } /* "t" */
+.icon-up-dir::before { content: "\25b2"; } /* "▲" */
+.icon-down-dir::before { content: "\25bc"; } /* "▼" */
+.icon-star::before { content: "\2605"; } /* "★" */
+.icon-check-off::before { content: "\2610"; } /* "☐" */
+.icon-check-on::before { content: "\2611"; } /* "☑" */
+.icon-calendar::before { content: "\e800"; } /* "" */
+.icon-plus::before { content: "\e801"; } /* "" */
+.icon-minus::before { content: "\e802"; } /* "" */
+.icon-youtube::before { content: "\f39e"; } /* "" */
+
 h1 { font-size: 21px;
 	line-height: 26px;
 	color: black;
@@ -13,7 +55,8 @@ h1 { font-size: 21px;
 	font-family: 'PT Sans','arial', sans-serif;
 	margin-top: 60px;
     margin-bottom: 28px;
-	 }
+}
+
 h2 { font-size: 21px;
 	line-height: 21px;
 	color: black;
@@ -21,23 +64,21 @@ h2 { font-size: 21px;
 	font-family: 'PT Sans','arial', sans-serif;
 }
 
+.logo {position: absolute;
+	   left: 50%;
+	   margin-left: -69px;
+	}
+
 .sprite-calendar {
     width: 21px;
     height: 22px;
     background-position: -5px -5px;
 }
 
-.sprite-academy {
-    width: 113px;
-    height: 39px;
-    background-position: -5px -63px;
+header.main-header {
+    background-color: white;
 }
 
-.logo {position: absolute;
-	   left: 50%;
-	   margin-left: -69px; 
-
-}
 .menu-item a {
 	text-decoration: none;
 	color: black;
@@ -62,7 +103,7 @@ li.menu-item:nth-child(2) {
 }
 
 .main-header {
-	width: 1200px;
+
 	margin: 0px auto;
 	min-height: 56px;
 }
@@ -73,14 +114,46 @@ ul.menu-list {
 .container {
 	width: 1200px;
 	margin: 0 auto;
+	background: white;
+    box-shadow: 0 0 20px 2px rgba(0,1,1,.2);
 	
 }
 .image-main {
     margin-bottom: 52px;
     background-image:url(../img/background-banner.jpg);
     height: 508px;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
+.image-main::after {
+	content: "";
+	width: 1200px;
+	height: 100px;
+	background-image:url(../img/mask.png);
+	background-repeat: no-repeat;
+	display: block;
+	position: absolute;
+    top: 452px;
+
+}
+
+img.welcome {
+    position: absolute;
+    left: 471px;
+    top: 76px;
+}
+
+img.sedona {
+    position: absolute;
+    left: 370px;
+    top: 214px;
+}
+img.Grand {
+    position: absolute;
+    left: 451px;
+    top: 348px;
+}
 .title {
 	width: 100%;
 	margin-bottom: 51px;
@@ -138,6 +211,8 @@ li.menu-item:nth-child(4) {
     width: 20%;
     list-style: none;
     text-align: center;
+    padding-left: 17px;
+    box-sizing: border-box;
 }
 
 li {
@@ -317,7 +392,26 @@ p.searcher-paragraph {
 .searcher-button label {
     font-weight: bold;
     padding-right: 19px;
-    padding-bottom: 36px;
+    padding-bottom: 34px;
+    padding-top: 7px;
+}
+
+.searcher-button-adult {
+    float: left;    
+}
+
+input#adults {
+    border: none;
+    background: #f2f2f2;
+    height: 35px;
+    width: 124px;
+    margin-right: 10px;
+}
+input#children {
+	border: none;
+    background: #f2f2f2;
+    height: 35px;
+    width: 106px;
 }
 
 .input-date {
@@ -336,9 +430,10 @@ label {
 }
 
 .searcher-find {
-    min-height: 58px;
-    min-width: 459px;
+    height: 58px;
+    width: 459px;
     background-color: #81b3d2;
+    display: inline-block;
 }
 a.searcher-find-text {
     text-decoration: none;
@@ -355,15 +450,10 @@ a.searcher-find-text {
 }
 
 footer.main-footer {
-    height: 80px;
-    margin-top: 40px;
+    height: 120px;
     box-sizing: border-box;
+    padding-top: 43px;
 }
-
-.container {
-    width: 1200px;
-}
-
 .social-btn {
 	display: inline-block;
 	width: 48px;
@@ -371,7 +461,7 @@ footer.main-footer {
     background-color: #81b3d2;
     margin: 0 2px;
     text-align: center;
-    line-height: 48px
+    line-height: 52px
 }
 
 .social-btn span {
@@ -380,9 +470,9 @@ footer.main-footer {
     background-repeat: no-repeat;
 }
 .social-btn-t span {
-	width: 17px;
-    height: 15px;
-    background-position: -5px -141px;
+    width: 17px;
+    height: 16px;
+    background-position: -5px -139px;
 }
 
 .social-btn-fb span {   
@@ -392,28 +482,88 @@ footer.main-footer {
 }
 
 .social-btn-utb span {
-    width: 10px;
+    width: 22px;
     height: 19px;
-    background-position: -5px -112px;
+    background-position: -4px -34px;
+}
+
+.social-btn:hover {
+	background-color: #669ec0;
+}
+
+.social-btn:active {
+	background-color: #5496bd;
+}
+.social-btn span:active {
+	opacity: 0.3;
 }
 
 section.footer-social {
     float: left;
-    width: 33.3%;
+    width: 400px;
     text-align: center;
+    box-sizing: border-box;
+    padding-left: 1px;
+    margin: 0;
+    height: 120px;
 }
+
 section.footer-copyright {
     float: left;
-    width: 33.3%;
+    box-sizing: border-box;
+    width: 400px;
+    padding-left: 106px;
+    height: 120px;
+    padding-top: 5px;
 }
-section.link {
+
+section.footer-link {
     float: left;
-    width: 33.3%;
-    min-height: 120px;
+    width: 400px;
+    height: 120px;
+    padding-top: 10px;
+    padding-left: 2px;
+    box-sizing: border-box;
     font-size: 21px;
     font-weight: bold;
     text-align: center;
 }
+
+
+.website {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding-bottom: 6px;
+}
+
+.reference {
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 5px;
+    background-image: url(../img/academy.png);
+    width: 113px;
+    height: 34px;
+}
+
+.reference:hover {
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 5px;
+    background-image: url(../img/academyHVR.png);
+    width: 113px;
+    height: 34px;
+}
+
+.reference:active {
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 5px;
+    background-image: url(../img/academyACT.png);
+    width: 113px;
+    height: 34px;
+}
+
 /* для inner.html */ 
 a {
     text-decoration: none;
@@ -452,6 +602,36 @@ a {
 .hotels-wrapper.clearfix {
     float: left;
     padding-right: 30px;
+    padding-top: 2px;
+}
+
+.hotels-item-heading {
+    float: left;
+}
+
+.raiting {
+    float: right;
+    margin-right: 72px;
+    font-size: 17px;
+    letter-spacing: -10px;
+    color: #81b3d2;
+    display: inline-block;
+    text-align: right;
+}
+
+.item-rating {
+    margin-top: 39px;
+    letter-spacing: -1px;
+    font-size: 14px;
+    line-height: 30px;
+    padding-left: 7px;
+    color: #797979;
+    width: 111px;
+    height: 28px;
+    background: #f2f2f2;
+    text-align: center;
+    padding-left: 0px;
+    box-sizing: border-box;
 }
 
 .hotel-selection-housing {
@@ -472,6 +652,7 @@ a {
   color: #ffffff;
   text-transform: uppercase;
   float: right;
+  padding-right: 67px;
 }
 
 .filter-range-title {
@@ -569,13 +750,11 @@ a {
 .btn-transparent {
   display: block;
   margin: 0 auto;
-  padding: 6px 35px;
-
-  font-size: 14px;
+  padding: 5px 31px;
+  font-size: 14px;   
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
-
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -630,6 +809,7 @@ b  {
     padding-left: 30px;
     display: inline-block;
 }
+
 .Search-result-sorting a {
 	font-size: 12px;
 }
@@ -638,11 +818,39 @@ article.hotels {
     border-left: none;
     border-right: none;
     height: 120px;
-    padding-top: 29px;
+    padding-top: 28px;
     padding-left: 74px;
+    width: 1126px;
 }
 
 h2.heading {
     margin: 0;
-    padding-bottom: 3px;
+    padding-bottom: 6px;
+}
+
+.hotels-item-description span {
+    display: inline-block;
+    margin-bottom: 12px;
+    width: 112px;  
+}
+
+a.blue-btn {
+    background: #81b3d2;
+    color: white;
+    font-weight: bold;
+    width: 109px;
+    height: 27px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 2px;
+}
+a.brown-btn {
+	background: #766357;
+    color: white;
+    font-weight: bold;
+    width: 142px;
+    height: 27px;
+    display: inline-block;
+    text-align: center;
+
 }
