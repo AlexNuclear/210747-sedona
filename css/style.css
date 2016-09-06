@@ -380,7 +380,7 @@ p.searcher-paragraph {
     height: 395px;
     padding-top: 54px;
     padding-left: 55px;
-    padding-right: 55px;
+    padding-right: 51px;
     box-sizing: border-box;
     background: white;
     box-shadow: 0 0 5px 2px rgba(0,1,1,.15);
@@ -389,7 +389,7 @@ p.searcher-paragraph {
 .searcher-button label {
     font-weight: bold;
     padding-right: 22px;
-    padding-top: 5px;
+    padding-top: 6px;
 }
 
 .searcher-button-adult {
@@ -444,7 +444,7 @@ input#children:hover {
     border: none;
     background-color: #f2f2f2;
     height: 38px;
-    width: 343px;
+    width: 345px;
     outline: none; 
     font-size: 14px;
     line-height: 26px;
@@ -1035,7 +1035,7 @@ a.brown-btn {
 }
 
 input#date2 {
-    width: 346px;
+    width: 345px;
     padding-left: 15px;
     box-sizing: border-box;;
 }
