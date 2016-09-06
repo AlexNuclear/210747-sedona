@@ -416,11 +416,6 @@ input#adults {
     font-weight: 600;
 }
 
-input#adults:hover {
-    border: 3px solid #e5e5e5;
-    background-color: white;
-    outline-style: #ebebeb;
-}
 input#children {
 	border: none;
     background: #f2f2f2;
@@ -433,11 +428,6 @@ input#children {
     text-align: center;
     font-weight: 400;
 
-}
-input#children:hover {
-    border: 3px solid #e5e5e5;
-    background-color: white;
-    outline-style: #ebebeb;
 }
 
 .input-date {
@@ -457,9 +447,15 @@ input#children:hover {
 }
 
 .input-date:hover {
+    background-color: #ebebeb;
+
+}
+
+.input-date:focus {
 	border: 3px solid #e5e5e5;
 	background-color: white;
 	outline-style: #ebebeb;
+	padding-left: 13px;
 }
 
 form {
@@ -490,8 +486,8 @@ a.searcher-find-text:hover {
 }
 
 a.searcher-find-text:active {
-	background-color: #5496bd;
-	opacity: 0.3;
+    background: #5496bd;
+    color: rgba(255,255,255,.3);
 }
 
 .map {
@@ -963,6 +959,14 @@ h2.heading {
     padding-bottom: 6px;
 }
 
+.heading-ref:hover {
+	color: #81b3d2;
+}
+
+.heading-ref:active {
+	color: #cacaca;
+}
+
 .hotels-item-description span {
     display: inline-block;
     margin-bottom: 12px;
@@ -979,6 +983,16 @@ a.blue-btn {
     text-align: center;
     margin-right: 2px;
 }
+
+a.blue-btn:hover {
+    background-color: #669ec0;
+}
+
+a.blue-btn:active {
+    background-color: #5496bd;
+    color: rgba(255,255,255,.3);
+}
+
 a.brown-btn {
 	background: #766357;
     color: white;
@@ -987,8 +1001,15 @@ a.brown-btn {
     height: 27px;
     display: inline-block;
     text-align: center;
-
 }
+a.brown-btn:hover {
+    background-color: #604e43;
+}
+a.brown-btn:active {
+    background-color: #503e33;
+    color: rgba(255,255,255,.3);
+}
+
 .arrival-date {
     margin-bottom: 28px;
     display: inline-block;
@@ -1038,6 +1059,13 @@ input#date2 {
     width: 345px;
     padding-left: 15px;
     box-sizing: border-box;;
+}
+
+input#date2:focus {
+	border: 3px solid #e5e5e5;
+	background-color: white;
+	outline-style: #ebebeb;
+	padding-left: 12px;
 }
 
 label.date2 {
@@ -1092,7 +1120,7 @@ label.date2 {
     background-position: -5px -192px;
 }
 .adults-minus:active {
-    background-position: -5px -206px;
+    background-position: -5px -205px;
 }
 
 .children-minus {
