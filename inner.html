@@ -22,20 +22,26 @@
         </div>
       </header>
       <main class="main">
-        <div class="hotel-selection">
+        <div class="hotel-selection clearfix">
           <form>
             <div class="hotel-selection-infrastructure">
               <span>ИНФРАСТРУКТУРА:</span>
-              <label>БАССЕЙН<input type="checkbox"></label>
-              <label>ПАРКОВКА<input type="checkbox"></label>
-              <label>WI-FI<input type="checkbox"></label>
+              <label for="pool">БАССЕЙН</label>
+              <input type="checkbox" id="pool">
+              <label for="parking">ПАРКОВКА</label>
+              <input type="checkbox" id="parking">
+              <label for="wi-fi">WI-FI</label>
+              <input type="checkbox" id="wi-fi">
             </div>
 
             <div class="hotel-selection-housing">
               <span>ТИП ЖИЛЬЯ:</span>
-              <label>ГОСТИНИЦА<input type="checkbox" checked></label>
-              <label>МОТЕЛЬ<input type="checkbox" checked></label>
-              <label>АПАРТАМЕНТЫ<input type="checkbox" checked></label>
+              <label for="hotel">ГОСТИНИЦА</label>
+              <input type="checkbox" checked id="hotel">
+              <label for="motel">МОТЕЛЬ</label>
+              <input type="checkbox" checked id="motel">
+              <label for="apartaments">АПАРТАМЕНТЫ</label>
+              <input type="checkbox" checked id="apartaments">
             </div>
 
             <div class="filter-range">
@@ -56,8 +62,8 @@
             </div>    
           </form>
         </div>
-        <div class="search-result">
-          <div class="Search-result-sorting clearfix">
+        <div class="search-result clearfix">
+          <div class="search-result-sorting clearfix">
             <b>НАЙДЕНО: 3</b>
             <span>СОРТИРОВКА:</span>
             <ul>
@@ -65,12 +71,13 @@
               <li><a href="#">ПО ТИПУ</a></li>
               <li><a href="#">ПО РЕЙТИНГУ</a></li>
             </ul>
-            <div class="up-down-buttons">
-  
-            </div>
           </div>   
+          <div class="up-down-buttons">
+            <a href="#" class="sprite-arrow-top"></a>
+            <a href="#" class="sprite-arrow-down"></a>
+          </div>
         </div>
-      
+
         <article class="hotels">
           <div class="hotels-wrapper clearfix">
             <img src="img/hotels/hotel1.jpg" width="135" height="90" alt="hotel">

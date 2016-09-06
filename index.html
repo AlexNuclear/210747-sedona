@@ -42,7 +42,7 @@
             <p class="banner-paragraph">СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
          </div>
           <Div class="banner-image">
-            <img src="img/Banner-second-sedona.jpg" width="800" height="257" alt="banner">
+            <img src="img/Banner-second-sedona.jpg" width="800" height="256" alt="banner">
           </Div>
         </div>
 
@@ -109,24 +109,29 @@
           <a class="search-button" href="#" type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
           <div class="searcher-button">
             <form action="#" method="post">
-              <label for="date1">ДАТА ЗАЕЗДА:</label>
-              <input type="date" id="date1" class="input-date">
-              <label for="date2">ДАТА ВЫЕЗДА:</label>
-              <input type="date" id="date2" class="input-date">
+              <div class="arrival-date sprite-calendar">
+                <label class="date1" for="date1">ДАТА ЗАЕЗДА:</label>
+                <input type="text" id="date1" class="input-date" placeholder="24 АПРЕЛЯ 2016">
+              </div>
+              <div class="departure-date sprite-calendar">
+                <label class="date2" for="date2">ДАТА ВЫЕЗДА:</label>
+                <input type="text" id="date2" class="input-date" placeholder="4 ИЮЛЯ 2016">
+              </div>
 
-              <div class="wrapper clearfix"></div>
+              <div class="wrapper clearfix">
+                <label for="adults">ВЗРОСЛЫЕ:</label>
                 <div class="searcher-button-adult">
-                  <label for="adults">ВЗРОСЛЫЕ:</label>
-                  <a href="#">+</a>              
-                  <input type="number" id="adults" class="small-buttons">
-                  <a href="#">-</a>
+                  <a href="#" class="adults-minus"></a>
+                  <input type="text" id="adults" class="small-buttons">
+                  <a class="adults-plus"></a>
                 </div>
+              </div>
 
                 <div class="searcher-children-button">
-                  <label for="adults">ДЕТИ:</label>
-                  <a href="#">+</a>
-                  <input type="number" id="children" class="small-buttons">
-                  <a href="#">-</a>
+                  <label for="children" class="children">ДЕТИ:</label>
+                  <a href="#" class="children-minus"></a>
+                  <input type="text" id="children" class="small-buttons">
+                  <a href="#" class="children-plus"></a>
                 </div>
               <div class="searcher-find">
                 <a href="#" class="searcher-find-text">НАЙТИ</a>
@@ -137,17 +142,15 @@
         <div class="map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d704493.6986475927!2d-112.17782870363189!3d34.89106401216888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1472821239886" width="1200" height="474" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
-      </main>
-    
-
+      </main> 
       <footer class="main-footer">
-        <section class="footer-link">
+        <section class=footer-link>
           <a href="#"> #VISITSEDONA </a>
         </section>
         <section class="footer-social">
           <a class="social-btn social-btn-t" href="#"><span></span></a>
           <a class="social-btn social-btn-fb" href="#"><span></span></a>
-          <a class="social-btn social-btn-utb" href="#"><span></span></a>
+           <a class="social-btn social-btn-utb" href="#"><span></span></a>
         </section>
         <section class="footer-copyright">
           <p class="website">WEBSITE BY </p>
