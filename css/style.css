@@ -489,8 +489,8 @@ footer.main-footer {
 }
 .social-btn {
 	display: inline-block;
-	width: 48px;
-    height: 48px;
+	width: 45px;
+    height: 49px;
     background-color: #81b3d2;
     margin: 0 2px;
     text-align: center;
@@ -565,7 +565,7 @@ section.footer-link {
     display: inline-block;
     vertical-align: middle;
     margin: 0;
-    padding-bottom: 6px;
+    padding-right: 1px;
 }
 
 .reference {
@@ -610,8 +610,8 @@ a {
     font-family: 'PT Sans','arial', sans-serif;
     font-weight: bold;
     margin: 0;
-    padding-left: 123px;
-    padding-right: 119px;
+    padding-left: 120px;
+    padding-right: 120px;
     padding-top: 17px;
     padding-bottom: 21px;
 }
@@ -719,7 +719,7 @@ a {
   color: #ffffff;
   text-transform: uppercase;
   float: right;
-  padding-right: 62px;
+  padding-right: 70px;
 
 }
 
@@ -728,13 +728,27 @@ a {
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
+  margin-top: 5px;
 }
 
 .price-controls {
-  height: 32px;
-  margin-bottom: 20px;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
+    height: 32px;
+    margin-bottom: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    width: 316px;
+    margin-left: 10px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
 }
 
 .price-controls label {
@@ -746,19 +760,6 @@ a {
   vertical-align: top;
   cursor: pointer;
 }
-.price-controls::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  width: 2px;
-  height: 22px;
-
-  background: #ffffff;
-}
-
 .price-controls .min-price,
 .price-controls .max-price {
   width: 90px;
@@ -795,7 +796,6 @@ a {
   top: -9px;
   width: 4px;
   height: 4px;
-
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
