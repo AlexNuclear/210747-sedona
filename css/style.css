@@ -239,7 +239,7 @@ h1.title-main {
 }
 
 .features.clearfix {
-    margin-bottom: 58px;
+    margin-bottom: 61px;
     width: 100%;
     margin-top: 50px;
 }
@@ -282,8 +282,15 @@ p.features-housing-paragraph {
 
 
 .features-housing-img {
-    height: 84px;
+	width: 75px;
+    height: 75px;
+    background-image: url(../img/house-icon.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 29px;
 }
+
 .features-food {
     float: left;
     width: 33.3%;
@@ -299,7 +306,13 @@ p.features-food-paragraph {
 }
 
 .features-food-img {
-    height: 84px;
+	width: 75px;
+    height: 75px;
+    background-image: url(../img/food-icon.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 28px;
 }
 
 .features-souvenirs {
@@ -310,11 +323,17 @@ p.features-food-paragraph {
 }
 
 .features-souvenirs-img {
-    padding-bottom: 5px;
+	width: 64px;
+    height: 75px;
+    background-image: url(../img/souvenirs-icon.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 31px;
 }
 
 h2.features-souvenirs-heading {
-    padding-bottom: 5px;
+    padding-bottom: 7px;
 }
 
 p.features-souvenirs-paragraph {
@@ -526,7 +545,7 @@ footer.main-footer {
 	background-image: url(../img/sprites/sprite.png);
     background-repeat: no-repeat;
 }
-
+/* Делал через span'ы,просто,чтобы понять,как это работает и знать,что есть альтернатива псевдоэлементам*/
 .social-btn-t span {
     width: 17px;
     height: 16px;
@@ -1215,5 +1234,21 @@ a.current {
 }
 
 .searcher-button.searcher-button-show {
-    display: block;
+	display: block;
+	animation: opacity 0.6s;
+}
+
+@keyframes opacity {
+	0% {opacity: 0;}
+	10% {opacity: 0.1;}
+	20% {opacity: 0.2;}
+	30% {opacity: 0.3;}
+	40% {opacity: 0.4;}
+	50% {opacity: 0.5;}
+	60% {opacity: 0.6;}	
+	70% {opacity: 0.7;}
+	80% {opacity: 0.8;}
+	90% {opacity: 0.8;}
+	95% {opacity: 0.95}		
+	100% {opacity: 1;}
 }
